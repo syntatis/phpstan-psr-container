@@ -66,6 +66,5 @@ By default, the rule will check `Psr\Container\ContainerInterface`. If you've sc
 ```yaml
 parameters:
     syntatis:
-        psr-11:
-            interface: 'Acme\Psr\Container\ContainerInterface'
+        psr-11: 'Acme\Psr\Container\ContainerInterface'
 ```
