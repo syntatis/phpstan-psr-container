@@ -2,18 +2,15 @@ services:
     -
         class: Syntatis\PHPStan\Psr11\ContainerDynamicReturnTypeExtension
         arguments:
-            interface: %syntatis.psr-11.interface%
+            interface: %syntatis.psr-11%
         tags:
             - phpstan.broker.dynamicMethodReturnTypeExtension
 
 parameters:
     syntatis:
-        psr-11:
-            interface: null
+        psr-11: null
 
 parametersSchema:
     syntatis: structure([
-        psr-11: structure([
-            interface: schema(string(), nullable())
-        ])
+        psr-11: schema(string(), nullable())
     ])
