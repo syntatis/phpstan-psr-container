@@ -54,7 +54,7 @@ Include `extension.neon` in your project's PHPStan config:
 
 ```
 includes:
-    - vendor/bnf/phpstan-psr-container/extension.neon
+    - vendor/syntatis/phpstan-psr-11/extension.neon
 ```
 
 Or, use [`phpstan/extension-installer`](https://github.com/phpstan/extension-installer).
