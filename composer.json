@@ -21,7 +21,8 @@
         },
         {
             "name": "Thoriq Firdaus",
-            "role": "Developer"
+            "role": "Developer",
+            "homepage": "https://github.com/tfirdaus"
         }
     ],
     "license": "GPL-3.0",
