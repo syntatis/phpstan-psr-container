@@ -8,6 +8,9 @@
         "phpstan",
         "static"
     ],
+    "conflict": {
+        "bnf/phpstan-psr-container": "*"
+    },
     "authors": [
         {
             "name": "Benjamin Franzke",
