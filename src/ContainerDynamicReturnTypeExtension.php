@@ -20,9 +20,7 @@ class ContainerDynamicReturnTypeExtension implements DynamicMethodReturnTypeExte
 
     public function __construct(?string $interface = null)
     {
-        $interface = ltrim($interface, '\\');
-
-        $this->interface = $interface || null;
+        $this->interface = (is_string($interface) ? ltrim($interface, '\\') : null) ?: null;
     }
 
     public function getClass(): string
