@@ -1,6 +1,10 @@
 # PHPStan for PSR-11
 
-This package provides PHPStan rules to the `get` method in PSR-11 `ContainerInterface`. The `get` method in the interface return type is `mixed`. This is not really useful for static analysis tools like PHPStan. Since it cannot infer the type of the service. You will need to add a PHPDoc comment to the variable to help PHPStan infer the type or check the type of the service at runtime with `is_a` or `instanceof` or use assertion [to narrow down the type](https://phpstan.org/writing-php-code/narrowing-types). For example:
+> PHPStan rules for PSR-11 `ContainerInterface`.
+
+The `get` method in the `ContainerInterface` interface return type is `mixed`. This is not really useful for static analysis tools like PHPStan. Since it cannot infer the type of the service. You will need to add a PHPDoc comment to the variable to help PHPStan infer the type or check the type of the service at runtime with `is_a` or `instanceof` or use assertion [to narrow down the type](https://phpstan.org/writing-php-code/narrowing-types).
+
+For example:
 
 ```php
 use Bar\Service;
@@ -20,7 +24,9 @@ class Foo
 }
 ```
 
-This package adds a return type to the `get` method, based on the requested service. You do not need to add PHPDoc comments or check the type of the service at runtime. For example:
+This package adds a return type to the `get` method, based on the requested service. You do not need to add PHPDoc comments or check the type of the service at runtime.
+
+For example:
 
 ```php
 use Bar\Service;
