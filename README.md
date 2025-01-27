@@ -1,4 +1,4 @@
-# PHPStan for PSR-11 ContainerInterface
+# PHPStan for PSR-11
 
 ## Installation
 
