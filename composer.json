@@ -1,5 +1,5 @@
 {
-    "name": "bnf/phpstan-psr-container",
+    "name": "syntatis/phpstan-psr-11",
     "description": "PHPStan dynamic return type extension for PSR-11 ContainerInterface",
     "type": "phpstan-extension",
     "keywords": [
@@ -14,9 +14,13 @@
             "email": "benjaminfranzke@gmail.com",
             "role": "Developer",
             "homepage": "https://bnfr.net"
+        },
+        {
+            "name": "Thoriq Firdaus",
+            "role": "Developer"
         }
     ],
-    "license": "GPL-2.0-or-later",
+    "license": "GPL-3.0",
     "extra": {
         "phpstan": {
             "includes": [
@@ -25,13 +29,13 @@
         }
     },
     "require": {
-        "php": "^7.0|^8.0",
-        "psr/container": "^1.0|^2.0",
-        "phpstan/phpstan": "^1.0|^2.0"
+        "php": ">=7.4",
+        "psr/container": "^2.0",
+        "phpstan/phpstan": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "Bnf\\PhpstanPsrContainer\\": "src/"
+            "Syntatis\\PHPStan\\Psr11\\": "src/"
         }
     }
 }

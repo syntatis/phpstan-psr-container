@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Bnf\PhpstanPsrContainer;
+namespace Syntatis\PHPStan\Psr11;
 
 use PHPStan\Analyser\Scope;
 use PHPStan\Reflection\MethodReflection;
@@ -16,9 +16,18 @@ use Psr\Container\ContainerInterface;
 
 class ContainerDynamicReturnTypeExtension implements DynamicMethodReturnTypeExtension
 {
+    private ?string $interface = null;
+
+    public function __construct(?string $interface = null)
+    {
+        var_dump($interface);
+        
+        $this->interface = $interface;
+    }
+
     public function getClass(): string
     {
-        return ContainerInterface::class;
+        return $this->interface ?? ContainerInterface::class;
     }
 
     public function isMethodSupported(MethodReflection $reflection): bool
