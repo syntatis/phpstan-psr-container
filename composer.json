@@ -3,6 +3,7 @@
     "description": "PHPStan dynamic return type extension for PSR-11 ContainerInterface",
     "type": "phpstan-extension",
     "keywords": [
+        "dev",
         "psr-11",
         "service-provider",
         "phpstan",
