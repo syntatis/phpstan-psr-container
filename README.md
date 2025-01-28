@@ -1,5 +1,7 @@
 # PHPStan for PSR-11
 
+[![ci](https://github.com/syntatis/phpstan-psr-11/actions/workflows/ci.yml/badge.svg)](https://github.com/syntatis/phpstan-psr-11/actions/workflows/ci.yml)
+
 > PHPStan rules for PSR-11 `ContainerInterface`.
 
 The `get` method in the `ContainerInterface` interface return type is `mixed`. This is not really useful for static analysis tools like PHPStan. Since it cannot infer the type of the service. You will need to add a PHPDoc comment to the variable to help PHPStan infer the type or check the type of the service at runtime with `is_a` or `instanceof` or use assertion [to narrow down the type](https://phpstan.org/writing-php-code/narrowing-types).
