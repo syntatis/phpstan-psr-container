@@ -28,7 +28,7 @@ class ContainerDynamicReturnTypeExtension implements DynamicMethodReturnTypeExte
 	{
 		$interface = is_string($interface) ? ltrim($interface, '\\') : null;
 
-		if (! str_ends_with($interface, '\\' . ContainerInterface::class)) {
+		if ($interface === null || ! str_ends_with($interface, '\\' . ContainerInterface::class)) {
 			return;
 		}
 
