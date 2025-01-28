@@ -13,6 +13,7 @@
 
 	<!-- The directories to apply the rules -->
 	<file>./app/</file>
+	<file>./tests/</file>
 
 	<!-- Show the warning but exit with 0. The Warning is fine -->
 	<config name="ignore_warnings_on_exit" value="1"/>
@@ -34,5 +35,9 @@
 	<!-- Enable PHPCompatibility ruleset to enable version compatibility test -->
 	<rule ref="PHPCompatibility"/>
 
+	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
+		<exclude-pattern>/tests/</exclude-pattern>
+	</rule>
 	<exclude-pattern>/cache/</exclude-pattern>
+	<exclude-pattern>/app/data.php</exclude-pattern>
 </ruleset>
