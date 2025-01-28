@@ -35,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Syntatis\\PHPStan\\Psr11\\": "src/"
+            "Syntatis\\PHPStan\\Psr11\\": "app/"
         }
     },
     "require": {
