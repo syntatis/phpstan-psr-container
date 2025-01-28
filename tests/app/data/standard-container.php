@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Syntatis\Tests;
 
 use Psr\Container\ContainerInterface;
-use stdClass;
 
 use function PHPStan\Testing\assertType;
 
@@ -14,9 +13,9 @@ class Foo
 	public function doFoo(): void
 	{
 		$container = new Container();
-		$service = $container->get(BarService::class);
+		$service = $container->get(BazService::class);
 
-		assertType(BarService::class, $service);
+		assertType(BazService::class, $service);
 
 		$service = $container->get('bar');
 
@@ -24,7 +23,7 @@ class Foo
 	}
 }
 
-class BarService
+class BazService
 {
 }
 
@@ -35,7 +34,7 @@ class Container implements ContainerInterface
 	public function __construct()
 	{
 		$this->services = [
-			BarService::class => new BarService(),
+			BazService::class => new BazService(),
 		];
 	}
 

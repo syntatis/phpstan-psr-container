@@ -6,12 +6,12 @@ namespace Syntatis\Tests;
 
 use PHPStan\Testing\TypeInferenceTestCase;
 
-class ContainerDynamicReturnTypeExtensionTest extends TypeInferenceTestCase
+class AssertStandardContainerTest extends TypeInferenceTestCase
 {
 	/** @return iterable<mixed> */
 	public function dataFileAsserts(): iterable
 	{
-		yield from $this->gatherAssertTypes(__DIR__ . '/data.php');
+		yield from $this->gatherAssertTypes(__DIR__ . '/data/standard-container.php');
 	}
 
 	/**

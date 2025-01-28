@@ -39,5 +39,5 @@
 		<exclude-pattern>/tests/</exclude-pattern>
 	</rule>
 	<exclude-pattern>/cache/</exclude-pattern>
-	<exclude-pattern>/app/data.php</exclude-pattern>
+	<exclude-pattern>/data/</exclude-pattern>
 </ruleset>
