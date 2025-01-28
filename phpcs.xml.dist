@@ -33,6 +33,6 @@
 
 	<!-- Enable PHPCompatibility ruleset to enable version compatibility test -->
 	<rule ref="PHPCompatibility"/>
-    
+
 	<exclude-pattern>/cache/</exclude-pattern>
 </ruleset>
