@@ -1,4 +1,4 @@
-# PHPStan for PSR-11
+# 😶 PHPStan for PSR-11
 
 [![ci](https://github.com/syntatis/phpstan-psr-11/actions/workflows/ci.yml/badge.svg)](https://github.com/syntatis/phpstan-psr-11/actions/workflows/ci.yml)
 
