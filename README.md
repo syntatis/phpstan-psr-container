@@ -1,6 +1,7 @@
 # 😶 PHPStan for PSR-11
 
 [![ci](https://github.com/syntatis/phpstan-psr-11/actions/workflows/ci.yml/badge.svg)](https://github.com/syntatis/phpstan-psr-11/actions/workflows/ci.yml)
+![Packagist Dependency Version](https://img.shields.io/packagist/dependency-v/syntatis/phpstan-psr-11/php?color=%237A86B8)
 
 > PHPStan rules for PSR-11 `ContainerInterface`.
 
