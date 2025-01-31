@@ -21,7 +21,7 @@ class Foo
 
         // PHPStan cannot infer the type of `$service`.
         // Check the type of the service at runtime.
-        if ($service instanceof Service::class) {
+        if ($service instanceof Service) {
         }
     }
 }
